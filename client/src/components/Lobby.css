@@ -1,0 +1,144 @@
+.lobby {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.lobby-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.lobby-logo {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.lobby-title {
+  font-family: "Bangers", cursive;
+  font-size: 2.5rem;
+  color: #ff6b00;
+  letter-spacing: 3px;
+  text-shadow: 0 0 30px rgba(255, 107, 0, 0.4);
+}
+
+.lobby-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0.5rem 0 2rem;
+  font-size: 0.95rem;
+}
+
+.error-message {
+  background: rgba(255, 50, 50, 0.15);
+  border: 1px solid rgba(255, 50, 50, 0.4);
+  color: #ff6b6b;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.lobby-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.lobby-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lobby-form h3 {
+  color: #ff9500;
+  margin-bottom: 0.5rem;
+}
+
+.team-size-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team-size-selector label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.size-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.size-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 107, 0, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-btn.active {
+  background: rgba(255, 107, 0, 0.3);
+  border-color: #ff6b00;
+  color: #ff6b00;
+  box-shadow: 0 0 15px rgba(255, 107, 0, 0.3);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.form-actions .btn {
+  flex: 1;
+}
+
+.lobby-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature span {
+  font-size: 1.5rem;
+}
+
+.feature p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 0.25rem;
+}
