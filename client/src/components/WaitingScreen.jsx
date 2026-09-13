@@ -3,10 +3,11 @@ import "./WaitingScreen.css";
 
 function WaitingScreen({ roomId, players, isHost, onStartGame, teamSize }) {
   const canStart = players.length >= 2;
+  const MAX_PLAYERS = 10;
 
   return (
     <div className="waiting-room">
-      <div className="waiting-room-card">
+      <div className="waiting-room-card" style={{ maxWidth: "800px" }}>
         <h2>⚔️ Battle Room</h2>
 
         <div className="room-code-display">
@@ -21,8 +22,8 @@ function WaitingScreen({ roomId, players, isHost, onStartGame, teamSize }) {
         </div>
 
         <div className="players-section">
-          <h3>Players ({players.length}/4)</h3>
-          <div className="players-grid">
+          <h3>Players ({players.length}/{MAX_PLAYERS})</h3>
+          <div className="players-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))" }}>
             {players.map((name, idx) => (
               <div key={idx} className="player-slot filled">
                 <span className="player-icon">🥷</span>
@@ -30,7 +31,7 @@ function WaitingScreen({ roomId, players, isHost, onStartGame, teamSize }) {
                 {idx === 0 && <span className="host-badge">HOST</span>}
               </div>
             ))}
-            {Array.from({ length: 4 - players.length }).map((_, idx) => (
+            {Array.from({ length: MAX_PLAYERS - players.length }).map((_, idx) => (
               <div key={`empty-${idx}`} className="player-slot empty">
                 <span className="player-icon">❓</span>
                 <span className="player-name">Waiting...</span>
@@ -40,23 +41,13 @@ function WaitingScreen({ roomId, players, isHost, onStartGame, teamSize }) {
         </div>
 
         <div className="game-settings">
-          <p>
-            🥷 Team Size: <strong>{teamSize} characters</strong>
-          </p>
-          <p>
-            🤖 Ranking: <strong>AI Powered</strong>
-          </p>
+          <p>🥷 Team Size: <strong>{teamSize} characters</strong></p>
+          <p>🤖 Ranking: <strong>AI Powered</strong></p>
         </div>
 
         {isHost ? (
-          <button
-            className="btn btn-success btn-lg"
-            onClick={onStartGame}
-            disabled={!canStart}
-          >
-            {canStart
-              ? "🚀 Start Battle!"
-              : `Need at least 2 players (${players.length}/2)`}
+          <button className="btn btn-success btn-lg" onClick={onStartGame} disabled={!canStart}>
+            {canStart ? "🚀 Start Battle!" : `Need at least 2 players (${players.length}/2)`}
           </button>
         ) : (
           <div className="waiting-for-host">
