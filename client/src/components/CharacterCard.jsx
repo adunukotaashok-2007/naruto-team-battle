@@ -2,7 +2,6 @@ import React from "react";
 import "./CharacterCard.css";
 
 function CharacterCard({ character, isSelected, onToggle, disabled }) {
-  // Calculate total power based on all 8 stats
   const totalStats = Object.values(character.stats).reduce((a, b) => a + b, 0);
 
   const getRoleColor = (role) => {
@@ -21,8 +20,18 @@ function CharacterCard({ character, isSelected, onToggle, disabled }) {
     >
       {isSelected && <div className="selected-badge">✓</div>}
 
-      {/* Image Header */}
-      <div className="card-image" style={{ backgroundImage: `url(${character.image})` }}>
+      {/* Image Banner */}
+      <div className="card-image-box">
+        <img
+          src={character.image}
+          alt={character.name}
+          className="char-img"
+          onError={(e) => {
+            // Fallback avatar if link is blocked
+            e.target.onerror = null;
+            e.target.src = "https://api.dicebear.com/7.x/bottts/svg?seed=" + character.name;
+          }}
+        />
         <div className="card-image-overlay">
           <h3 className="char-name">{character.name}</h3>
           <div className="char-badges">
@@ -39,7 +48,7 @@ function CharacterCard({ character, isSelected, onToggle, disabled }) {
           <span>⚡ OVERALL POWER: {totalStats}</span>
         </div>
 
-        {/* 8 Detailed Stats Grid */}
+        {/* 8 Stats Grid */}
         <div className="stat-grid">
           {Object.entries(character.stats).map(([stat, value]) => (
             <div key={stat} className="stat-box">
