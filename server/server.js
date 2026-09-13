@@ -149,7 +149,9 @@ function evaluateWithStats(teams) {
 
     const synergyBonus = clans.size < team.length ? 15 : 0;
     const balanceBonus = roles.size * 10;
-    const score = Math.min(100, Math.round((totalStats / (team.length * 600)) * 60 + synergyBonus + balanceBonus));
+    
+    // UPDATED MATH: team.length * 800 (because there are 8 stats per character now)
+    const score = Math.min(100, Math.round((totalStats / (team.length * 800)) * 60 + synergyBonus + balanceBonus));
     const grade = score >= 90 ? "S" : score >= 80 ? "A" : score >= 70 ? "B" : "C";
 
     const mvp = team.reduce((a, b) =>
@@ -160,9 +162,9 @@ function evaluateWithStats(teams) {
       player: playerName,
       score,
       grade,
-      strengths: [`Total power: ${totalStats}`, `${roles.size} roles covered`],
-      weaknesses: [`Lacks synergy in ${team.length - clans.size} clans`],
-      synergyAnalysis: `Covers ${roles.size} unique roles with ${clans.size} clans.`,
+      strengths: [`Total combined power: ${totalStats}`, `${roles.size} tactical roles covered`],
+      weaknesses: [`Lacks synergy across ${team.length - clans.size} clans`],
+      synergyAnalysis: `Team coordinates ${roles.size} unique roles utilizing members from ${clans.size} clans.`,
       mvp: mvp.name,
     });
   }
@@ -172,8 +174,8 @@ function evaluateWithStats(teams) {
 
   return {
     rankings: teamScores,
-    battleSimulation: "Mathematical battle simulation completed based on Ninja stats and team role balance.",
-    overallAnalysis: "Rankings calculated dynamically via power stats and clan synergy.",
+    battleSimulation: "Battle simulation complete. Winner determined by overall power, speed, durability, chakra reserves, and role synergy.",
+    overallAnalysis: "Rankings dynamically calculated via the 8-stat evaluation engine.",
     method: "stat-engine",
   };
 }
@@ -182,7 +184,7 @@ function buildAIPrompt(teams) {
   return `Rank these Naruto teams from best to worst. Teams: ${JSON.stringify(teams)}. Return JSON: {"rankings":[{"rank":1,"player":"...","score":95,"grade":"S","strengths":["..."],"weaknesses":["..."],"synergyAnalysis":"...","mvp":"..."}],"battleSimulation":"...","overallAnalysis":"..."}`;
 }
 
-// Serve Frontend Static Files
+// Serve Frontend Static Files (For Render Deployment)
 const distPath = path.join(__dirname, "../client/dist");
 app.use(express.static(distPath));
 app.get("*", (req, res) => {
