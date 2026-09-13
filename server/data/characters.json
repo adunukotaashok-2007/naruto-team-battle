@@ -4,323 +4,107 @@
     "name": "Naruto Uzumaki",
     "village": "Leaf",
     "clan": "Uzumaki",
-    "image": "https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png",
-    "stats": {
-      "ninjutsu": 95,
-      "taijutsu": 80,
-      "genjutsu": 40,
-      "intelligence": 60,
-      "stamina": 100,
-      "speed": 85
-    },
-    "abilities": ["Rasengan", "Shadow Clone Jutsu", "Sage Mode", "Kurama Link Mode"],
-    "role": "Offense",
-    "description": "The Seventh Hokage, jinchuriki of the Nine-Tails."
+    "stats": { "ninjutsu": 95, "taijutsu": 80, "genjutsu": 40, "intelligence": 60, "stamina": 100, "speed": 85 },
+    "abilities": ["Rasengan", "Shadow Clone", "Sage Mode", "Kurama Mode"],
+    "role": "Offense"
   },
   {
     "id": 2,
     "name": "Sasuke Uchiha",
     "village": "Leaf",
     "clan": "Uchiha",
-    "image": "https://static.wikia.nocookie.net/naruto/images/2/21/Sasuke_Part_1.png",
-    "stats": {
-      "ninjutsu": 98,
-      "taijutsu": 85,
-      "genjutsu": 95,
-      "intelligence": 90,
-      "stamina": 75,
-      "speed": 90
-    },
-    "abilities": ["Chidori", "Sharingan", "Rinnegan", "Susanoo", "Amaterasu"],
-    "role": "All-Rounder",
-    "description": "Last surviving loyal Uchiha, Shadow Hokage."
+    "stats": { "ninjutsu": 98, "taijutsu": 85, "genjutsu": 95, "intelligence": 90, "stamina": 75, "speed": 90 },
+    "abilities": ["Chidori", "Sharingan", "Rinnegan", "Susanoo"],
+    "role": "All-Rounder"
   },
   {
     "id": 3,
     "name": "Itachi Uchiha",
     "village": "Leaf",
     "clan": "Uchiha",
-    "image": "https://static.wikia.nocookie.net/naruto/images/b/bb/Itachi.png",
-    "stats": {
-      "ninjutsu": 95,
-      "taijutsu": 75,
-      "genjutsu": 100,
-      "intelligence": 100,
-      "stamina": 50,
-      "speed": 85
-    },
-    "abilities": ["Tsukuyomi", "Amaterasu", "Susanoo", "Izanami", "Yata Mirror"],
-    "role": "Genjutsu Specialist",
-    "description": "Prodigy of the Uchiha clan. Master of genjutsu."
+    "stats": { "ninjutsu": 95, "taijutsu": 75, "genjutsu": 100, "intelligence": 100, "stamina": 50, "speed": 85 },
+    "abilities": ["Tsukuyomi", "Amaterasu", "Susanoo", "Izanami"],
+    "role": "Genjutsu Specialist"
   },
   {
     "id": 4,
     "name": "Might Guy",
     "village": "Leaf",
     "clan": "None",
-    "image": "https://static.wikia.nocookie.net/naruto/images/3/31/Might_Guy.png",
-    "stats": {
-      "ninjutsu": 30,
-      "taijutsu": 100,
-      "genjutsu": 15,
-      "intelligence": 55,
-      "stamina": 95,
-      "speed": 100
-    },
-    "abilities": ["Eight Gates", "Morning Peacock", "Night Guy", "Daytime Tiger"],
-    "role": "Taijutsu Specialist",
-    "description": "Konoha's Sublime Green Beast of Prey."
+    "stats": { "ninjutsu": 30, "taijutsu": 100, "genjutsu": 15, "intelligence": 55, "stamina": 95, "speed": 100 },
+    "abilities": ["Eight Gates", "Morning Peacock", "Night Guy"],
+    "role": "Taijutsu Specialist"
   },
   {
     "id": 5,
     "name": "Kakashi Hatake",
     "village": "Leaf",
     "clan": "Hatake",
-    "image": "https://static.wikia.nocookie.net/naruto/images/2/27/Kakashi_Hatake.png",
-    "stats": {
-      "ninjutsu": 90,
-      "taijutsu": 80,
-      "genjutsu": 80,
-      "intelligence": 95,
-      "stamina": 65,
-      "speed": 85
-    },
+    "stats": { "ninjutsu": 90, "taijutsu": 80, "genjutsu": 80, "intelligence": 95, "stamina": 65, "speed": 85 },
     "abilities": ["Raikiri", "Kamui", "Sharingan", "Lightning Blade"],
-    "role": "Tactician",
-    "description": "The Copy Ninja, Sixth Hokage."
+    "role": "Tactician"
   },
   {
     "id": 6,
     "name": "Sakura Haruno",
     "village": "Leaf",
     "clan": "Haruno",
-    "image": "https://static.wikia.nocookie.net/naruto/images/6/6b/Sakura_Part_1.png",
-    "stats": {
-      "ninjutsu": 75,
-      "taijutsu": 80,
-      "genjutsu": 60,
-      "intelligence": 85,
-      "stamina": 80,
-      "speed": 70
-    },
-    "abilities": ["Byakugou Seal", "Cherry Blossom Impact", "Medical Ninjutsu", "Summoning: Katsuyu"],
-    "role": "Healer",
-    "description": "Greatest medical ninja after Tsunade."
+    "stats": { "ninjutsu": 75, "taijutsu": 80, "genjutsu": 60, "intelligence": 85, "stamina": 80, "speed": 70 },
+    "abilities": ["Byakugou Seal", "Cherry Blossom Impact", "Medical Ninjutsu"],
+    "role": "Healer"
   },
   {
     "id": 7,
     "name": "Gaara",
     "village": "Sand",
     "clan": "None",
-    "image": "https://static.wikia.nocookie.net/naruto/images/1/1d/Gaara_Part_I.png",
-    "stats": {
-      "ninjutsu": 90,
-      "taijutsu": 50,
-      "genjutsu": 35,
-      "intelligence": 80,
-      "stamina": 85,
-      "speed": 60
-    },
-    "abilities": ["Sand Shield", "Sand Burial", "Sand Tsunami", "Shukaku Connection"],
-    "role": "Defense",
-    "description": "Fifth Kazekage, former jinchuriki of Shukaku."
+    "stats": { "ninjutsu": 90, "taijutsu": 50, "genjutsu": 35, "intelligence": 80, "stamina": 85, "speed": 60 },
+    "abilities": ["Sand Shield", "Sand Burial", "Sand Tsunami"],
+    "role": "Defense"
   },
   {
     "id": 8,
     "name": "Rock Lee",
     "village": "Leaf",
     "clan": "Lee",
-    "image": "https://static.wikia.nocookie.net/naruto/images/4/4d/Rock_Lee.png",
-    "stats": {
-      "ninjutsu": 10,
-      "taijutsu": 95,
-      "genjutsu": 10,
-      "intelligence": 45,
-      "stamina": 90,
-      "speed": 95
-    },
-    "abilities": ["Primary Lotus", "Hidden Lotus", "Drunken Fist", "Fifth Gate"],
-    "role": "Taijutsu Specialist",
-    "description": "Hardworking genius of effort."
+    "stats": { "ninjutsu": 10, "taijutsu": 95, "genjutsu": 10, "intelligence": 45, "stamina": 90, "speed": 95 },
+    "abilities": ["Primary Lotus", "Hidden Lotus", "Drunken Fist"],
+    "role": "Taijutsu Specialist"
   },
   {
     "id": 9,
     "name": "Shikamaru Nara",
     "village": "Leaf",
     "clan": "Nara",
-    "image": "https://static.wikia.nocookie.net/naruto/images/3/30/Shikamaru_Part_I.png",
-    "stats": {
-      "ninjutsu": 65,
-      "taijutsu": 50,
-      "genjutsu": 55,
-      "intelligence": 100,
-      "stamina": 55,
-      "speed": 60
-    },
-    "abilities": ["Shadow Possession", "Shadow Strangle", "Shadow Stitching", "Strategic Genius"],
-    "role": "Tactician",
-    "description": "IQ over 200. Konoha's chief strategist."
+    "stats": { "ninjutsu": 65, "taijutsu": 50, "genjutsu": 55, "intelligence": 100, "stamina": 55, "speed": 60 },
+    "abilities": ["Shadow Possession", "Shadow Strangle", "Strategic Genius"],
+    "role": "Tactician"
   },
   {
     "id": 10,
     "name": "Hinata Hyuga",
     "village": "Leaf",
     "clan": "Hyuga",
-    "image": "https://static.wikia.nocookie.net/naruto/images/d/d5/Hinata.png",
-    "stats": {
-      "ninjutsu": 70,
-      "taijutsu": 80,
-      "genjutsu": 55,
-      "intelligence": 70,
-      "stamina": 70,
-      "speed": 75
-    },
-    "abilities": ["Byakugan", "Gentle Fist", "Twin Lion Fists", "Eight Trigrams Sixty-Four Palms"],
-    "role": "Support",
-    "description": "Hyuga clan heiress. Byakugan user."
+    "stats": { "ninjutsu": 70, "taijutsu": 80, "genjutsu": 55, "intelligence": 70, "stamina": 70, "speed": 75 },
+    "abilities": ["Byakugan", "Gentle Fist", "Twin Lion Fists"],
+    "role": "Support"
   },
   {
     "id": 11,
     "name": "Minato Namikaze",
     "village": "Leaf",
     "clan": "Namikaze",
-    "image": "https://static.wikia.nocookie.net/naruto/images/1/1f/Minato_Namikaze.png",
-    "stats": {
-      "ninjutsu": 98,
-      "taijutsu": 85,
-      "genjutsu": 70,
-      "intelligence": 95,
-      "stamina": 80,
-      "speed": 100
-    },
-    "abilities": ["Flying Thunder God", "Rasengan", "Reaper Death Seal", "Sage Mode"],
-    "role": "Offense",
-    "description": "The Fourth Hokage, Yellow Flash of the Leaf."
+    "stats": { "ninjutsu": 98, "taijutsu": 85, "genjutsu": 70, "intelligence": 95, "stamina": 80, "speed": 100 },
+    "abilities": ["Flying Thunder God", "Rasengan", "Reaper Death Seal"],
+    "role": "Offense"
   },
   {
     "id": 12,
     "name": "Tsunade Senju",
     "village": "Leaf",
     "clan": "Senju",
-    "image": "https://static.wikia.nocookie.net/naruto/images/6/6c/Tsunade_Infobox.png",
-    "stats": {
-      "ninjutsu": 85,
-      "taijutsu": 90,
-      "genjutsu": 60,
-      "intelligence": 85,
-      "stamina": 85,
-      "speed": 70
-    },
-    "abilities": ["Byakugou Seal", "Creation Rebirth", "Summoning: Katsuyu", "Superhuman Strength"],
-    "role": "Healer",
-    "description": "Fifth Hokage, one of the Legendary Sannin."
-  },
-  {
-    "id": 13,
-    "name": "Madara Uchiha",
-    "village": "Leaf",
-    "clan": "Uchiha",
-    "image": "https://static.wikia.nocookie.net/naruto/images/e/e1/Madara_prof.png",
-    "stats": {
-      "ninjutsu": 100,
-      "taijutsu": 90,
-      "genjutsu": 90,
-      "intelligence": 90,
-      "stamina": 95,
-      "speed": 90
-    },
-    "abilities": ["Perfect Susanoo", "Rinnegan", "Infinite Tsukuyomi", "Wood Release", "Limbo"],
-    "role": "All-Rounder",
-    "description": "Legendary Uchiha leader, rival of Hashirama."
-  },
-  {
-    "id": 14,
-    "name": "Hashirama Senju",
-    "village": "Leaf",
-    "clan": "Senju",
-    "image": "https://static.wikia.nocookie.net/naruto/images/2/2e/Hashirama_Senju.png",
-    "stats": {
-      "ninjutsu": 100,
-      "taijutsu": 85,
-      "genjutsu": 65,
-      "intelligence": 85,
-      "stamina": 100,
-      "speed": 80
-    },
-    "abilities": ["Wood Release", "Sage Mode", "Shin Susenju", "Self-Healing"],
-    "role": "Offense",
-    "description": "First Hokage, God of Shinobi."
-  },
-  {
-    "id": 15,
-    "name": "Neji Hyuga",
-    "village": "Leaf",
-    "clan": "Hyuga",
-    "image": "https://static.wikia.nocookie.net/naruto/images/c/c2/Neji_Hy%C5%ABga.png",
-    "stats": {
-      "ninjutsu": 70,
-      "taijutsu": 90,
-      "genjutsu": 50,
-      "intelligence": 80,
-      "stamina": 65,
-      "speed": 80
-    },
-    "abilities": ["Byakugan", "Rotation", "Eight Trigrams Air Palm", "Gentle Fist Art"],
-    "role": "Defense",
-    "description": "Hyuga prodigy of the branch family."
-  },
-  {
-    "id": 16,
-    "name": "Orochimaru",
-    "village": "Sound",
-    "clan": "None",
-    "image": "https://static.wikia.nocookie.net/naruto/images/0/0c/Orochimaru_Infobox.png",
-    "stats": {
-      "ninjutsu": 100,
-      "taijutsu": 65,
-      "genjutsu": 80,
-      "intelligence": 95,
-      "stamina": 80,
-      "speed": 70
-    },
-    "abilities": ["Edo Tensei", "Snake Sage Mode", "Living Corpse Reincarnation", "Kusanagi Sword"],
-    "role": "All-Rounder",
-    "description": "Legendary Sannin. Master of forbidden jutsu."
-  },
-  {
-    "id": 17,
-    "name": "Jiraiya",
-    "village": "Leaf",
-    "clan": "None",
-    "image": "https://static.wikia.nocookie.net/naruto/images/a/a3/Jiraiya_infobox.png",
-    "stats": {
-      "ninjutsu": 90,
-      "taijutsu": 75,
-      "genjutsu": 70,
-      "intelligence": 80,
-      "stamina": 85,
-      "speed": 75
-    },
-    "abilities": ["Sage Mode", "Rasengan", "Summoning: Gamabunta", "Toad Oil Flame Bullet"],
-    "role": "Offense",
-    "description": "Legendary Sannin. The Toad Sage."
-  },
-  {
-    "id": 18,
-    "name": "Pain (Nagato)",
-    "village": "Rain",
-    "clan": "Uzumaki",
-    "image": "https://static.wikia.nocookie.net/naruto/images/3/3d/Nagato.png",
-    "stats": {
-      "ninjutsu": 100,
-      "taijutsu": 60,
-      "genjutsu": 75,
-      "intelligence": 90,
-      "stamina": 70,
-      "speed": 75
-    },
-    "abilities": ["Rinnegan", "Six Paths of Pain", "Almighty Push", "Planetary Devastation", "Rinne Rebirth"],
-    "role": "Offense",
-    "description": "Leader of the Akatsuki. Rinnegan wielder."
+    "stats": { "ninjutsu": 85, "taijutsu": 90, "genjutsu": 60, "intelligence": 85, "stamina": 85, "speed": 70 },
+    "abilities": ["Byakugou Seal", "Creation Rebirth", "Super Strength"],
+    "role": "Healer"
   }
 ]
