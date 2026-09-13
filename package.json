@@ -1,0 +1,11 @@
+{
+  "name": "naruto-team-battle",
+  "version": "1.0.0",
+  "description": "Multiplayer Naruto team battle and ranking system",
+  "main": "server/server.js",
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "node server/server.js",
+    "dev": "cd server && node server.js"
+  }
+}
