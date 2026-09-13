@@ -136,36 +136,47 @@ async function evaluateTeams(roomId) {
 
 function evaluateWithStats(teams) {
   const teamScores = [];
-  for (const [playerName, team] of Object.entries(teams)) {
-    let totalStats = 0;
-    const roles = new Set();
-    const clans = new Set();
+  
+  // The exact keys matching the 8 categories from the frontend
+  const categoryKeys = ["speed", "power", "iq", "ninjutsu", "durability", "taijutsu", "genjutsu", "chakra"];
 
-    team.forEach((char) => {
-      totalStats += Object.values(char.stats).reduce((a, b) => a + b, 0);
-      roles.add(char.role);
-      clans.add(char.clan);
+  for (const [playerName, team] of Object.entries(teams)) {
+    let categoryScore = 0;
+    let strengths = [];
+    let weaknesses = [];
+    let bestPick = null;
+    let highestStatMatch = 0;
+
+    // Evaluate each character based on the SPECIFIC SLOT they were placed in
+    team.forEach((char, index) => {
+      const assignedCategory = categoryKeys[index];
+      const statValue = char.stats[assignedCategory]; // How good are they at this specific thing?
+      
+      categoryScore += statValue;
+
+      // Track MVP pick
+      if (statValue > highestStatMatch) {
+        highestStatMatch = statValue;
+        bestPick = `${char.name} (${assignedCategory.toUpperCase()} - ${statValue})`;
+      }
+
+      if (statValue >= 90) strengths.push(`Brilliant pick: ${char.name} for ${assignedCategory}`);
+      if (statValue < 70) weaknesses.push(`Poor pick: ${char.name} for ${assignedCategory} (Stat: ${statValue})`);
     });
 
-    const synergyBonus = clans.size < team.length ? 15 : 0;
-    const balanceBonus = roles.size * 10;
-    
-    // UPDATED MATH: team.length * 800 (because there are 8 stats per character now)
-    const score = Math.min(100, Math.round((totalStats / (team.length * 800)) * 60 + synergyBonus + balanceBonus));
-    const grade = score >= 90 ? "S" : score >= 80 ? "A" : score >= 70 ? "B" : "C";
-
-    const mvp = team.reduce((a, b) =>
-      Object.values(a.stats).reduce((x, y) => x + y, 0) > Object.values(b.stats).reduce((x, y) => x + y, 0) ? a : b
-    );
+    // Score out of 100 based on how perfectly they matched characters to categories
+    const maxPossibleScore = team.length * 100;
+    const finalScore = Math.round((categoryScore / maxPossibleScore) * 100);
+    const grade = finalScore >= 90 ? "S" : finalScore >= 80 ? "A" : finalScore >= 70 ? "B" : "C";
 
     teamScores.push({
       player: playerName,
-      score,
+      score: finalScore,
       grade,
-      strengths: [`Total combined power: ${totalStats}`, `${roles.size} tactical roles covered`],
-      weaknesses: [`Lacks synergy across ${team.length - clans.size} clans`],
-      synergyAnalysis: `Team coordinates ${roles.size} unique roles utilizing members from ${clans.size} clans.`,
-      mvp: mvp.name,
+      strengths: strengths.slice(0, 3), // Top 3 strengths
+      weaknesses: weaknesses.slice(0, 2), // Top 2 weaknesses
+      synergyAnalysis: `Scored ${categoryScore} out of ${maxPossibleScore} possible category points.`,
+      mvp: bestPick,
     });
   }
 
@@ -174,9 +185,9 @@ function evaluateWithStats(teams) {
 
   return {
     rankings: teamScores,
-    battleSimulation: "Battle simulation complete. Winner determined by overall power, speed, durability, chakra reserves, and role synergy.",
-    overallAnalysis: "Rankings dynamically calculated via the 8-stat evaluation engine.",
-    method: "stat-engine",
+    battleSimulation: "The winner was decided by who drafted the most statistically perfect characters for their specific categories!",
+    overallAnalysis: "Rankings calculated dynamically via Category Match Engine.",
+    method: "category-engine",
   };
 }
 
