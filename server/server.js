@@ -59,7 +59,7 @@ io.on("connection", (socket) => {
   socket.on("joinRoom", ({ roomId, playerName }, callback) => {
     const room = gameRooms[roomId];
     if (!room) return callback({ success: false, error: "Room not found" });
-    if (Object.keys(room.players).length >= 4) return callback({ success: false, error: "Room full" });
+    if (Object.keys(room.players).length >= 10) return callback({ success: false, error: "Room full" });
     if (room.status !== "waiting") return callback({ success: false, error: "Game already started" });
 
     room.players[socket.id] = { name: playerName, id: socket.id };
