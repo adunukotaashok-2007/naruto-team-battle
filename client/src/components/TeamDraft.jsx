@@ -2,137 +2,104 @@ import React, { useState } from "react";
 import CharacterCard from "./CharacterCard";
 import "./TeamDraft.css";
 
-function TeamDraft({ characters, teamSize, onSubmitTeam, playerName }) {
-  const [selectedTeam, setSelectedTeam] = useState([]);
-  const [filter, setFilter] = useState("All");
-  const [sortBy, setSortBy] = useState("name");
+// The 8 Ultimate Categories
+export const DRAFT_CATEGORIES = [
+  { key: "speed", name: "⚡ Speedster (Fastest)" },
+  { key: "power", name: "💪 Heavy Hitter (Power)" },
+  { key: "iq", name: "🧠 Tactician (IQ)" },
+  { key: "ninjutsu", name: "🔥 Ninjutsu Master" },
+  { key: "durability", name: "🛡️ Ultimate Tank" },
+  { key: "taijutsu", name: "👊 Taijutsu Master" },
+  { key: "genjutsu", name: "👁️ Genjutsu Master" },
+  { key: "chakra", name: "🌊 Chakra Monster" }
+];
 
-  const toggleCharacter = (char) => {
-    if (selectedTeam.find((c) => c.id === char.id)) {
-      setSelectedTeam(selectedTeam.filter((c) => c.id !== char.id));
-    } else if (selectedTeam.length < teamSize) {
-      setSelectedTeam([...selectedTeam, char]);
+function TeamDraft({ characters, teamSize, onSubmitTeam, playerName }) {
+  const [draftPicks, setDraftPicks] = useState({});
+  const [activeSlot, setActiveSlot] = useState(0);
+
+  // Number of categories based on lobby selection
+  const activeCategories = DRAFT_CATEGORIES.slice(0, teamSize);
+
+  const handleCharacterClick = (char) => {
+    // If already picked, remove them
+    const existingSlot = Object.keys(draftPicks).find(key => draftPicks[key]?.id === char.id);
+    if (existingSlot) {
+      const newDraft = { ...draftPicks };
+      delete newDraft[existingSlot];
+      setDraftPicks(newDraft);
+      setActiveSlot(Number(existingSlot));
+      return;
     }
+
+    // Assign to active category
+    setDraftPicks(prev => ({ ...prev, [activeSlot]: char }));
+    
+    // Auto-advance to next empty slot
+    const nextEmpty = activeCategories.findIndex((_, idx) => idx !== activeSlot && !draftPicks[idx]);
+    if (nextEmpty !== -1) setActiveSlot(nextEmpty);
   };
 
   const handleSubmit = () => {
-    if (selectedTeam.length === teamSize) {
-      onSubmitTeam(selectedTeam);
-    }
+    const teamArray = activeCategories.map((_, idx) => draftPicks[idx]);
+    if (teamArray.every(char => char)) onSubmitTeam(teamArray);
   };
-
-  // Filtering
-  const roles = ["All", ...new Set(characters.map((c) => c.role))];
-  const filtered =
-    filter === "All" ? characters : characters.filter((c) => c.role === filter);
-
-  // Sorting
-  const sorted = [...filtered].sort((a, b) => {
-    if (sortBy === "name") return a.name.localeCompare(b.name);
-    if (sortBy === "power") {
-      const totalA = Object.values(a.stats).reduce((x, y) => x + y, 0);
-      const totalB = Object.values(b.stats).reduce((x, y) => x + y, 0);
-      return totalB - totalA;
-    }
-    return 0;
-  });
-
-  const totalPower = selectedTeam.reduce(
-    (sum, c) => sum + Object.values(c.stats).reduce((a, b) => a + b, 0),
-    0
-  );
 
   return (
     <div className="draft-container">
-      {/* Draft Header */}
       <div className="draft-header">
         <div className="draft-info">
-          <h2>Draft Your Team, {playerName}!</h2>
-          <p>
-            Select {teamSize} characters ({selectedTeam.length}/{teamSize})
-          </p>
+          <h2>Category Draft, {playerName}!</h2>
+          <p>Pick the best character for each specific category.</p>
         </div>
 
-        {/* Selected Team Preview */}
-        <div className="team-preview">
-          {Array.from({ length: teamSize }).map((_, idx) => {
-            const char = selectedTeam[idx];
+        {/* Category Slots UI */}
+        <div className="category-slots">
+          {activeCategories.map((cat, idx) => {
+            const char = draftPicks[idx];
             return (
-              <div
-                key={idx}
-                className={`preview-slot ${char ? "filled" : "empty"}`}
-                onClick={() => char && toggleCharacter(char)}
+              <div 
+                key={idx} 
+                className={`cat-slot ${activeSlot === idx ? "active" : ""} ${char ? "filled" : ""}`}
+                onClick={() => setActiveSlot(idx)}
               >
+                <span className="cat-name">{cat.name}</span>
                 {char ? (
-                  <>
-                    <span className="preview-name">{char.name}</span>
-                    <span className="preview-remove">✕</span>
-                  </>
+                  <div className="cat-char">
+                    <img src={char.image.startsWith("http") ? `https://wsrv.nl/?url=${encodeURIComponent(char.image)}` : char.image} alt={char.name} />
+                    <span>{char.name}</span>
+                  </div>
                 ) : (
-                  <span className="preview-empty">Slot {idx + 1}</span>
+                  <span className="cat-empty">Tap to select...</span>
                 )}
               </div>
             );
           })}
-          {selectedTeam.length > 0 && (
-            <div className="team-power">⚡ {totalPower}</div>
-          )}
         </div>
 
         <button
           className="btn btn-success btn-lg submit-btn"
           onClick={handleSubmit}
-          disabled={selectedTeam.length !== teamSize}
+          disabled={Object.keys(draftPicks).length !== activeCategories.length}
         >
-          {selectedTeam.length === teamSize
-            ? "🔒 Lock In Team!"
-            : `Select ${teamSize - selectedTeam.length} more`}
+          {Object.keys(draftPicks).length === activeCategories.length ? "🔒 Lock In Picks!" : "Select All Categories"}
         </button>
       </div>
 
-      {/* Filters */}
-      <div className="draft-filters">
-        <div className="filter-group">
-          <span className="filter-label">Role:</span>
-          <div className="filter-buttons">
-            {roles.map((role) => (
-              <button
-                key={role}
-                className={`filter-btn ${filter === role ? "active" : ""}`}
-                onClick={() => setFilter(role)}
-              >
-                {role}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="filter-group">
-          <span className="filter-label">Sort:</span>
-          <select
-            className="sort-select"
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-          >
-            <option value="name">Name</option>
-            <option value="power">Power</option>
-          </select>
-        </div>
-      </div>
-
-      {/* Character Grid */}
+      {/* Character Roster */}
       <div className="characters-grid">
-        {sorted.map((char) => (
-          <CharacterCard
-            key={char.id}
-            character={char}
-            isSelected={!!selectedTeam.find((c) => c.id === char.id)}
-            onToggle={toggleCharacter}
-            disabled={
-              selectedTeam.length >= teamSize &&
-              !selectedTeam.find((c) => c.id === char.id)
-            }
-          />
-        ))}
+        {characters.map((char) => {
+          const isPicked = Object.values(draftPicks).some(c => c?.id === char.id);
+          return (
+            <CharacterCard
+              key={char.id}
+              character={char}
+              isSelected={isPicked}
+              onToggle={handleCharacterClick}
+              disabled={Object.keys(draftPicks).length >= activeCategories.length && !isPicked}
+            />
+          );
+        })}
       </div>
     </div>
   );
