@@ -20,14 +20,14 @@ function CharacterCard({ character, isSelected, onToggle, disabled }) {
     >
       {isSelected && <div className="selected-badge">✓</div>}
 
-      {/* Image Banner */}
+      {/* Image Banner with NO-REFERRER to fix broken images */}
       <div className="card-image-box">
         <img
           src={character.image}
           alt={character.name}
           className="char-img"
+          referrerPolicy="no-referrer"
           onError={(e) => {
-            // Fallback avatar if link is blocked
             e.target.onerror = null;
             e.target.src = "https://api.dicebear.com/7.x/bottts/svg?seed=" + character.name;
           }}
@@ -48,7 +48,6 @@ function CharacterCard({ character, isSelected, onToggle, disabled }) {
           <span>⚡ OVERALL POWER: {totalStats}</span>
         </div>
 
-        {/* 8 Stats Grid */}
         <div className="stat-grid">
           {Object.entries(character.stats).map(([stat, value]) => (
             <div key={stat} className="stat-box">
@@ -67,7 +66,6 @@ function CharacterCard({ character, isSelected, onToggle, disabled }) {
           ))}
         </div>
 
-        {/* Abilities */}
         <div className="char-abilities">
           {character.abilities.map((ability, idx) => (
             <span key={idx} className="ability-tag">{ability}</span>
