@@ -190,3 +190,70 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
+/* Add to bottom of TeamDraft.css */
+.category-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.cat-slot {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cat-slot.active {
+  border: 2px solid #ff6b00;
+  background: rgba(255, 107, 0, 0.1);
+  box-shadow: 0 0 15px rgba(255, 107, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.cat-slot.filled {
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.cat-name {
+  font-size: 0.75rem;
+  color: #ff9500;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cat-char {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cat-char img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.cat-char span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cat-empty {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+}
