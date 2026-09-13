@@ -4,7 +4,8 @@
     "name": "Naruto Uzumaki",
     "village": "Leaf",
     "clan": "Uzumaki",
-    "image": "https://i.pinimg.com/736x/87/a9/f5/87a9f5d34169527f71933c1682f80879.jpg",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    "image": "https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png",
     "stats": { "power": 98, "speed": 92, "durability": 98, "chakra": 100, "ninjutsu": 95, "taijutsu": 88, "genjutsu": 40, "iq": 75 },
     "abilities": ["Rasengan", "Shadow Clone", "Sage Mode", "Kurama Link"],
     "role": "Offense"
@@ -14,7 +15,7 @@
     "name": "Sasuke Uchiha",
     "village": "Leaf",
     "clan": "Uchiha",
-    "image": "https://i.pinimg.com/736x/21/df/b8/21dfb87fcfda8b23f2f81156828859df.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/2/21/Sasuke_Part_1.png",
     "stats": { "power": 98, "speed": 96, "durability": 85, "chakra": 90, "ninjutsu": 98, "taijutsu": 92, "genjutsu": 95, "iq": 92 },
     "abilities": ["Chidori", "Sharingan", "Rinnegan", "Susanoo"],
     "role": "All-Rounder"
@@ -24,7 +25,7 @@
     "name": "Itachi Uchiha",
     "village": "Leaf",
     "clan": "Uchiha",
-    "image": "https://i.pinimg.com/736x/8a/a5/d8/8aa5d8b76ce83b9c02b5dcfe0374e2d2.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/b/bb/Itachi.png",
     "stats": { "power": 92, "speed": 88, "durability": 55, "chakra": 65, "ninjutsu": 95, "taijutsu": 88, "genjutsu": 100, "iq": 100 },
     "abilities": ["Tsukuyomi", "Amaterasu", "Susanoo", "Yata Mirror"],
     "role": "Genjutsu Specialist"
@@ -34,7 +35,7 @@
     "name": "Might Guy",
     "village": "Leaf",
     "clan": "None",
-    "image": "https://i.pinimg.com/736x/9f/c6/ab/9fc6abcbd9e0f63b2dbf2d5e7a9e0481.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/3/31/Might_Guy.png",
     "stats": { "power": 100, "speed": 100, "durability": 95, "chakra": 50, "ninjutsu": 30, "taijutsu": 100, "genjutsu": 15, "iq": 65 },
     "abilities": ["Eight Gates", "Morning Peacock", "Night Guy"],
     "role": "Taijutsu Specialist"
@@ -44,7 +45,7 @@
     "name": "Kakashi Hatake",
     "village": "Leaf",
     "clan": "Hatake",
-    "image": "https://i.pinimg.com/736x/cf/e6/73/cfe673934abda397a66205da1bd14dfd.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/2/27/Kakashi_Hatake.png",
     "stats": { "power": 88, "speed": 88, "durability": 78, "chakra": 70, "ninjutsu": 95, "taijutsu": 88, "genjutsu": 82, "iq": 98 },
     "abilities": ["Raikiri", "Kamui", "Sharingan", "Lightning Blade"],
     "role": "Tactician"
@@ -54,7 +55,7 @@
     "name": "Sakura Haruno",
     "village": "Leaf",
     "clan": "Haruno",
-    "image": "https://i.pinimg.com/736x/6c/dc/1a/6cdc1ad3468593de0108bebfd83637ef.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/6/6b/Sakura_Part_1.png",
     "stats": { "power": 90, "speed": 72, "durability": 95, "chakra": 92, "ninjutsu": 78, "taijutsu": 90, "genjutsu": 65, "iq": 88 },
     "abilities": ["Byakugou Seal", "Monster Strength", "Medical Ninjutsu"],
     "role": "Healer"
@@ -64,7 +65,7 @@
     "name": "Gaara",
     "village": "Sand",
     "clan": "None",
-    "image": "https://i.pinimg.com/736x/ec/d7/0b/ecd70bcc37b4dc7910077ef2cd029f63.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/1/1d/Gaara_Part_I.png",
     "stats": { "power": 88, "speed": 62, "durability": 100, "chakra": 95, "ninjutsu": 95, "taijutsu": 50, "genjutsu": 40, "iq": 88 },
     "abilities": ["Absolute Defense", "Sand Burial", "Sand Tsunami"],
     "role": "Defense"
@@ -74,7 +75,7 @@
     "name": "Minato Namikaze",
     "village": "Leaf",
     "clan": "Namikaze",
-    "image": "https://i.pinimg.com/736x/41/53/7d/41537dc7b508f7ce1b7cbf2eb790dc97.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/1/1f/Minato_Namikaze.png",
     "stats": { "power": 92, "speed": 100, "durability": 78, "chakra": 88, "ninjutsu": 98, "taijutsu": 88, "genjutsu": 72, "iq": 98 },
     "abilities": ["Flying Raijin", "Rasengan", "Reaper Death Seal"],
     "role": "Offense"
@@ -84,7 +85,7 @@
     "name": "Madara Uchiha",
     "village": "Leaf",
     "clan": "Uchiha",
-    "image": "https://i.pinimg.com/736x/32/38/53/3238531d0dbecce793bbbc9e82937000.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/e/e1/Madara_prof.png",
     "stats": { "power": 100, "speed": 95, "durability": 100, "chakra": 100, "ninjutsu": 100, "taijutsu": 95, "genjutsu": 95, "iq": 95 },
     "abilities": ["Perfect Susanoo", "Tengai Shinsei", "Wood Style", "Limbo"],
     "role": "All-Rounder"
@@ -94,7 +95,7 @@
     "name": "Hinata Hyuga",
     "village": "Leaf",
     "clan": "Hyuga",
-    "image": "https://i.pinimg.com/736x/5b/c2/f6/5bc2f60a927d3c01bf668e2f89c0953c.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/d/d5/Hinata.png",
     "stats": { "power": 75, "speed": 75, "durability": 75, "chakra": 80, "ninjutsu": 70, "taijutsu": 85, "genjutsu": 55, "iq": 75 },
     "abilities": ["Byakugan", "Twin Lion Fists", "8 Trigrams 64 Palms"],
     "role": "Support"
@@ -104,7 +105,7 @@
     "name": "Hashirama Senju",
     "village": "Leaf",
     "clan": "Senju",
-    "image": "https://i.pinimg.com/736x/38/7b/45/387b4582f3478d103328e752945d8363.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/2/2e/Hashirama_Senju.png",
     "stats": { "power": 100, "speed": 88, "durability": 100, "chakra": 100, "ninjutsu": 100, "taijutsu": 92, "genjutsu": 65, "iq": 88 },
     "abilities": ["Wood Release", "True Several Thousand Hands", "Sage Mode"],
     "role": "Offense"
@@ -114,7 +115,7 @@
     "name": "Tobirama Senju",
     "village": "Leaf",
     "clan": "Senju",
-    "image": "https://i.pinimg.com/736x/c5/40/31/c5403164906f35b2e505230ff208bdcd.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/b/be/Tobirama_Senju.png",
     "stats": { "power": 90, "speed": 95, "durability": 85, "chakra": 90, "ninjutsu": 95, "taijutsu": 85, "genjutsu": 75, "iq": 98 },
     "abilities": ["Water Dragon Jutsu", "Flying Raijin", "Edo Tensei"],
     "role": "Tactician"
@@ -124,7 +125,7 @@
     "name": "Jiraiya",
     "village": "Leaf",
     "clan": "None",
-    "image": "https://i.pinimg.com/736x/b2/80/f5/b280f55bd4482087612f00a581451fdd.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/a/a3/Jiraiya_infobox.png",
     "stats": { "power": 90, "speed": 80, "durability": 88, "chakra": 92, "ninjutsu": 92, "taijutsu": 82, "genjutsu": 70, "iq": 88 },
     "abilities": ["Sage Mode", "Rasengan", "Toad Mouth Bind"],
     "role": "All-Rounder"
@@ -134,7 +135,7 @@
     "name": "Tsunade Senju",
     "village": "Leaf",
     "clan": "Senju",
-    "image": "https://i.pinimg.com/736x/77/83/8d/77838d729bcfa3fa138e6ebf54a83b28.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/6/6c/Tsunade_Infobox.png",
     "stats": { "power": 92, "speed": 72, "durability": 98, "chakra": 95, "ninjutsu": 85, "taijutsu": 92, "genjutsu": 60, "iq": 90 },
     "abilities": ["Byakugou Seal", "Mitotic Regeneration", "Summoning: Katsuyu"],
     "role": "Healer"
@@ -144,7 +145,7 @@
     "name": "Orochimaru",
     "village": "Sound",
     "clan": "None",
-    "image": "https://i.pinimg.com/736x/87/4d/cd/874dcd48e9ef4e2d31e9c5ec8402f043.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/0/0c/Orochimaru_Infobox.png",
     "stats": { "power": 88, "speed": 82, "durability": 98, "chakra": 90, "ninjutsu": 98, "taijutsu": 78, "genjutsu": 80, "iq": 98 },
     "abilities": ["Edo Tensei", "Eight Branches Technique", "Snake Reincarnation"],
     "role": "Tactician"
@@ -154,7 +155,7 @@
     "name": "Pain (Nagato)",
     "village": "Rain",
     "clan": "Uzumaki",
-    "image": "https://i.pinimg.com/736x/f6/45/30/f645300067644917a1a0bd3876e4c0aa.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/3/3d/Nagato.png",
     "stats": { "power": 96, "speed": 82, "durability": 85, "chakra": 98, "ninjutsu": 100, "taijutsu": 75, "genjutsu": 80, "iq": 90 },
     "abilities": ["Almighty Push", "Universal Pull", "Chibaku Tensei"],
     "role": "Offense"
@@ -164,7 +165,7 @@
     "name": "Obito Uchiha",
     "village": "Leaf",
     "clan": "Uchiha",
-    "image": "https://i.pinimg.com/736x/7d/50/a9/7d50a980590a3c20c02fb3b34b679469.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/4/4a/Obito_Uchiha.png",
     "stats": { "power": 96, "speed": 92, "durability": 95, "chakra": 95, "ninjutsu": 95, "taijutsu": 88, "genjutsu": 90, "iq": 90 },
     "abilities": ["Kamui Intangibility", "Fire Style", "Ten-Tails Jinchuriki"],
     "role": "Defense"
@@ -174,7 +175,7 @@
     "name": "Shisui Uchiha",
     "village": "Leaf",
     "clan": "Uchiha",
-    "image": "https://i.pinimg.com/736x/32/df/bd/32dfbd8b76c8c117d6b3ef9a764dcbca.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/d/d8/Shisui.png",
     "stats": { "power": 88, "speed": 98, "durability": 70, "chakra": 80, "ninjutsu": 88, "taijutsu": 85, "genjutsu": 100, "iq": 92 },
     "abilities": ["Kotoamatsukami", "Body Flicker", "Susanoo"],
     "role": "Genjutsu Specialist"
@@ -184,7 +185,7 @@
     "name": "Neji Hyuga",
     "village": "Leaf",
     "clan": "Hyuga",
-    "image": "https://i.pinimg.com/736x/6f/9d/2f/6f9d2f25b30613eb51bd7303c734b41a.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/c/c2/Neji_Hy%C5%ABga.png",
     "stats": { "power": 80, "speed": 82, "durability": 80, "chakra": 75, "ninjutsu": 70, "taijutsu": 95, "genjutsu": 50, "iq": 88 },
     "abilities": ["Byakugan", "Rotation", "8 Trigrams Air Palm"],
     "role": "Defense"
@@ -194,7 +195,7 @@
     "name": "Rock Lee",
     "village": "Leaf",
     "clan": "Lee",
-    "image": "https://i.pinimg.com/736x/cd/69/82/cd69820f413a9d45a95f9c9636c7a0d4.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/4/4d/Rock_Lee.png",
     "stats": { "power": 88, "speed": 95, "durability": 85, "chakra": 20, "ninjutsu": 10, "taijutsu": 98, "genjutsu": 10, "iq": 60 },
     "abilities": ["Sixth Gate", "Primary Lotus", "Drunken Fist"],
     "role": "Taijutsu Specialist"
@@ -204,7 +205,7 @@
     "name": "Shikamaru Nara",
     "village": "Leaf",
     "clan": "Nara",
-    "image": "https://i.pinimg.com/736x/11/71/39/117139e6a00beed25fbd290539f1c7d2.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/3/30/Shikamaru_Part_I.png",
     "stats": { "power": 65, "speed": 68, "durability": 65, "chakra": 65, "ninjutsu": 75, "taijutsu": 60, "genjutsu": 60, "iq": 100 },
     "abilities": ["Shadow Possession", "Shadow Stitching", "Tactical Trap"],
     "role": "Tactician"
@@ -214,7 +215,7 @@
     "name": "Kaguya Otsutsuki",
     "village": "None",
     "clan": "Otsutsuki",
-    "image": "https://i.pinimg.com/736x/55/7c/4f/557c4f6d4d173c05c310c1e84365fb96.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/0/07/Kaguya_Otsutsuki.png",
     "stats": { "power": 100, "speed": 90, "durability": 100, "chakra": 100, "ninjutsu": 100, "taijutsu": 80, "genjutsu": 95, "iq": 70 },
     "abilities": ["Amenominaka", "All-Killing Ash Bones", "Yomotsu Hirasaka"],
     "role": "Offense"
@@ -224,99 +225,29 @@
     "name": "Killer Bee",
     "village": "Cloud",
     "clan": "None",
-    "image": "https://i.pinimg.com/736x/3f/15/8e/3f158e239272365bb68f6bf79e0a0d4c.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/f/f6/Killer_B.png",
     "stats": { "power": 92, "speed": 88, "durability": 92, "chakra": 98, "ninjutsu": 85, "taijutsu": 92, "genjutsu": 70, "iq": 75 },
     "abilities": ["8-Tails Tailed Beast Bomb", "Seven Blades Dance", "Lariat"],
     "role": "All-Rounder"
   },
   {
     "id": 24,
-    "name": "A (4th Raikage)",
-    "village": "Cloud",
-    "clan": "None",
-    "image": "https://i.pinimg.com/736x/a2/63/12/a263126be1131efcfc8430b12bc12eb2.jpg",
-    "stats": { "power": 92, "speed": 98, "durability": 92, "chakra": 88, "ninjutsu": 80, "taijutsu": 95, "genjutsu": 40, "iq": 75 },
-    "abilities": ["Lightning Armor", "Liger Bomb", "Guillotine Drop"],
-    "role": "Taijutsu Specialist"
-  },
-  {
-    "id": 25,
-    "name": "Mei Terumi",
-    "village": "Mist",
-    "clan": "None",
-    "image": "https://i.pinimg.com/736x/3c/6e/88/3c6e885bc1752b5be957582b137fdf31.jpg",
-    "stats": { "power": 85, "speed": 78, "durability": 75, "chakra": 85, "ninjutsu": 92, "taijutsu": 70, "genjutsu": 65, "iq": 85 },
-    "abilities": ["Lava Release", "Vapor Release", "Water Dragon"],
-    "role": "Offense"
-  },
-  {
-    "id": 26,
-    "name": "Onoki (3rd Tsuchikage)",
-    "village": "Stone",
-    "clan": "None",
-    "image": "https://i.pinimg.com/736x/43/d8/78/43d878d8a7c64a51139e8020a169b1df.jpg",
-    "stats": { "power": 92, "speed": 65, "durability": 70, "chakra": 88, "ninjutsu": 98, "taijutsu": 50, "genjutsu": 60, "iq": 95 },
-    "abilities": ["Particle Style: Atomic Dismantling", "Weighted Boulder", "Flight"],
-    "role": "Offense"
-  },
-  {
-    "id": 27,
     "name": "Kisame Hoshigaki",
     "village": "Mist",
     "clan": "Hoshigaki",
-    "image": "https://i.pinimg.com/736x/91/d8/80/91d880d613919ec3126f5dcdcdbc1561.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/8/87/Kisame_Hoshigaki.png",
     "stats": { "power": 90, "speed": 80, "durability": 95, "chakra": 100, "ninjutsu": 90, "taijutsu": 85, "genjutsu": 50, "iq": 80 },
     "abilities": ["Samehada Fusion", "Super Shark Bomb", "Water Dome"],
     "role": "Defense"
   },
   {
-    "id": 28,
+    "id": 25,
     "name": "Deidara",
     "village": "Stone",
     "clan": "None",
-    "image": "https://i.pinimg.com/736x/21/7d/51/217d519b5bfb4f9d0c64b58406bcbf3c.jpg",
+    "image": "https://static.wikia.nocookie.net/naruto/images/9/90/Deidara.png",
     "stats": { "power": 88, "speed": 82, "durability": 70, "chakra": 85, "ninjutsu": 92, "taijutsu": 65, "genjutsu": 50, "iq": 80 },
     "abilities": ["C4 Karura", "C0 Ultimate Art", "Explosive Clay Birds"],
     "role": "Offense"
-  },
-  {
-    "id": 29,
-    "name": "Sasori",
-    "village": "Sand",
-    "clan": "None",
-    "image": "https://i.pinimg.com/736x/89/3e/dc/893edcd7b049d5045bb6ee029a1b150f.jpg",
-    "stats": { "power": 85, "speed": 78, "durability": 88, "chakra": 80, "ninjutsu": 90, "taijutsu": 70, "genjutsu": 60, "iq": 90 },
-    "abilities": ["100 Puppets Performance", "Iron Sand Unleashed", "Poison Blades"],
-    "role": "Support"
-  },
-  {
-    "id": 30,
-    "name": "Zabuza Momochi",
-    "village": "Mist",
-    "clan": "None",
-    "image": "https://i.pinimg.com/736x/1a/d2/34/1ad234cd0e02d6b38c2ef40d4e9b7201.jpg",
-    "stats": { "power": 78, "speed": 78, "durability": 78, "chakra": 70, "ninjutsu": 80, "taijutsu": 85, "genjutsu": 50, "iq": 82 },
-    "abilities": ["Hidden Mist Jutsu", "Executioner Blade", "Water Dragon"],
-    "role": "Offense"
-  },
-  {
-    "id": 31,
-    "name": "Haku",
-    "village": "Mist",
-    "clan": "Yuki",
-    "image": "https://i.pinimg.com/736x/a2/12/3f/a2123f81e3ed109503487c8a3068e82a.jpg",
-    "stats": { "power": 72, "speed": 92, "durability": 65, "chakra": 70, "ninjutsu": 82, "taijutsu": 75, "genjutsu": 50, "iq": 80 },
-    "abilities": ["Demonic Ice Mirrors", "Ice Needles", "Silent Killing"],
-    "role": "Support"
-  },
-  {
-    "id": 32,
-    "name": "Kabuto Yakushi (Sage)",
-    "village": "Sound",
-    "clan": "None",
-    "image": "https://i.pinimg.com/736x/77/59/31/77593130d22bd4b6131f13b190f8987b.jpg",
-    "stats": { "power": 90, "speed": 85, "durability": 90, "chakra": 92, "ninjutsu": 95, "taijutsu": 80, "genjutsu": 85, "iq": 98 },
-    "abilities": ["Dragon Sage Mode", "Inorganic Reincarnation", "Edo Tensei"],
-    "role": "All-Rounder"
   }
 ]
