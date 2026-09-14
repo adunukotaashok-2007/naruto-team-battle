@@ -1,13 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CharacterCard.css";
 
 function CharacterCard({ character, isSelected, onToggle, disabled }) {
+  const [imgError, setImgError] = useState(false);
   const totalStats = Object.values(character.stats).reduce((a, b) => a + b, 0);
-
-  // MAGICAL IMAGE PROXY: Fixes broken Wikia images!
-  const safeImageUrl = character.image.startsWith("http") 
-    ? `https://wsrv.nl/?url=${encodeURIComponent(character.image)}` 
-    : character.image;
 
   const getRoleColor = (role) => {
     const colors = {
@@ -25,17 +21,21 @@ function CharacterCard({ character, isSelected, onToggle, disabled }) {
     >
       {isSelected && <div className="selected-badge">✓</div>}
 
+      {/* IMAGE HEADER WITH GUARANTEED FALLBACK */}
       <div className="card-image-box">
-        <img
-          src={safeImageUrl}
-          alt={character.name}
-          className="char-img"
-          referrerPolicy="no-referrer"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = "https://api.dicebear.com/7.x/bottts/svg?seed=" + character.name;
-          }}
-        />
+        {!imgError ? (
+          <img
+            src={character.image}
+            alt={character.name}
+            className="char-img"
+            referrerPolicy="no-referrer"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="avatar-fallback">
+            <span>{character.name.charAt(0)}</span>
+          </div>
+        )}
         <div className="card-image-overlay">
           <h3 className="char-name">{character.name}</h3>
           <div className="char-badges">
@@ -46,16 +46,32 @@ function CharacterCard({ character, isSelected, onToggle, disabled }) {
       </div>
 
       <div className="card-content">
-        <div className="char-power-total"><span>⚡ OVERALL POWER: {totalStats}</span></div>
+        <div className="char-power-total">
+          <span>⚡ OVERALL POWER: {totalStats}</span>
+        </div>
+
+        {/* 8 CATEGORIES GRID */}
         <div className="stat-grid">
           {Object.entries(character.stats).map(([stat, value]) => (
             <div key={stat} className="stat-box">
               <span className="stat-label">{stat.toUpperCase()}</span>
               <div className="stat-bar-bg">
-                <div className="stat-bar-fill" style={{ width: `${value}%`, backgroundColor: value >= 90 ? "#ff4444" : value >= 75 ? "#ff9500" : value >= 50 ? "#ffd000" : "#888" }}></div>
+                <div
+                  className="stat-bar-fill"
+                  style={{
+                    width: `${value}%`,
+                    backgroundColor: value >= 90 ? "#ff4444" : value >= 75 ? "#ff9500" : value >= 50 ? "#ffd000" : "#888",
+                  }}
+                ></div>
               </div>
               <span className="stat-value">{value}</span>
             </div>
+          ))}
+        </div>
+
+        <div className="char-abilities">
+          {character.abilities.map((ability, idx) => (
+            <span key={idx} className="ability-tag">{ability}</span>
           ))}
         </div>
       </div>
