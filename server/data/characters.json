@@ -1,0 +1,251 @@
+[
+  {
+    "id": 1,
+    "name": "Naruto Uzumaki",
+    "village": "Leaf",
+    "clan": "Uzumaki",
+    "image": "https://raw.githubusercontent.com/adunukotaashok-2007/naruto-character-rank/main/public/images/naruto.jpg",
+    "stats": { "power": 98, "speed": 92, "durability": 98, "chakra": 100, "ninjutsu": 95, "taijutsu": 88, "genjutsu": 40, "iq": 75 },
+    "abilities": ["Rasengan", "Shadow Clone", "Sage Mode"],
+    "role": "Offense"
+  },
+  {
+    "id": 2,
+    "name": "Sasuke Uchiha",
+    "village": "Leaf",
+    "clan": "Uchiha",
+    "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/480-naruto-uzumaki.jpg",
+    "stats": { "power": 98, "speed": 96, "durability": 85, "chakra": 90, "ninjutsu": 98, "taijutsu": 92, "genjutsu": 95, "iq": 92 },
+    "abilities": ["Chidori", "Sharingan", "Rinnegan"],
+    "role": "All-Rounder"
+  },
+  {
+    "id": 3,
+    "name": "Itachi Uchiha",
+    "village": "Leaf",
+    "clan": "Uchiha",
+    "image": "https://images.justwatch.com/poster/305417066/s718/naruto-shippuden.jpg",
+    "stats": { "power": 92, "speed": 88, "durability": 55, "chakra": 65, "ninjutsu": 95, "taijutsu": 88, "genjutsu": 100, "iq": 100 },
+    "abilities": ["Tsukuyomi", "Amaterasu", "Susanoo"],
+    "role": "Genjutsu Specialist"
+  },
+  {
+    "id": 4,
+    "name": "Might Guy",
+    "village": "Leaf",
+    "clan": "None",
+    "image": "https://cdn.myanimelist.net/images/characters/9/131331.jpg",
+    "stats": { "power": 100, "speed": 100, "durability": 95, "chakra": 50, "ninjutsu": 30, "taijutsu": 100, "genjutsu": 15, "iq": 65 },
+    "abilities": ["Eight Gates", "Morning Peacock"],
+    "role": "Taijutsu Specialist"
+  },
+  {
+    "id": 5,
+    "name": "Kakashi Hatake",
+    "village": "Leaf",
+    "clan": "Hatake",
+    "image": "https://cdn.myanimelist.net/images/characters/7/284129.jpg",
+    "stats": { "power": 88, "speed": 88, "durability": 78, "chakra": 70, "ninjutsu": 95, "taijutsu": 88, "genjutsu": 82, "iq": 98 },
+    "abilities": ["Raikiri", "Kamui", "Sharingan"],
+    "role": "Tactician"
+  },
+  {
+    "id": 6,
+    "name": "Sakura Haruno",
+    "village": "Leaf",
+    "clan": "Haruno",
+    "image": "https://cdn.myanimelist.net/images/characters/14/284128.jpg",
+    "stats": { "power": 90, "speed": 72, "durability": 95, "chakra": 92, "ninjutsu": 78, "taijutsu": 90, "genjutsu": 65, "iq": 88 },
+    "abilities": ["Byakugou Seal", "Monster Strength"],
+    "role": "Healer"
+  },
+  {
+    "id": 7,
+    "name": "Gaara",
+    "village": "Sand",
+    "clan": "None",
+    "image": "https://cdn.myanimelist.net/images/characters/15/284126.jpg",
+    "stats": { "power": 88, "speed": 62, "durability": 100, "chakra": 95, "ninjutsu": 95, "taijutsu": 50, "genjutsu": 40, "iq": 88 },
+    "abilities": ["Absolute Defense", "Sand Burial"],
+    "role": "Defense"
+  },
+  {
+    "id": 8,
+    "name": "Minato Namikaze",
+    "village": "Leaf",
+    "clan": "Namikaze",
+    "image": "https://cdn.myanimelist.net/images/characters/11/303534.jpg",
+    "stats": { "power": 92, "speed": 100, "durability": 78, "chakra": 88, "ninjutsu": 98, "taijutsu": 88, "genjutsu": 72, "iq": 98 },
+    "abilities": ["Flying Raijin", "Rasengan"],
+    "role": "Offense"
+  },
+  {
+    "id": 9,
+    "name": "Madara Uchiha",
+    "village": "Leaf",
+    "clan": "Uchiha",
+    "image": "https://cdn.myanimelist.net/images/characters/16/250495.jpg",
+    "stats": { "power": 100, "speed": 95, "durability": 100, "chakra": 100, "ninjutsu": 100, "taijutsu": 95, "genjutsu": 95, "iq": 95 },
+    "abilities": ["Perfect Susanoo", "Wood Style"],
+    "role": "All-Rounder"
+  },
+  {
+    "id": 10,
+    "name": "Hinata Hyuga",
+    "village": "Leaf",
+    "clan": "Hyuga",
+    "image": "https://cdn.myanimelist.net/images/characters/12/284130.jpg",
+    "stats": { "power": 75, "speed": 75, "durability": 75, "chakra": 80, "ninjutsu": 70, "taijutsu": 85, "genjutsu": 55, "iq": 75 },
+    "abilities": ["Byakugan", "Twin Lion Fists"],
+    "role": "Support"
+  },
+  {
+    "id": 11,
+    "name": "Hashirama Senju",
+    "village": "Leaf",
+    "clan": "Senju",
+    "image": "https://cdn.myanimelist.net/images/characters/16/303533.jpg",
+    "stats": { "power": 100, "speed": 88, "durability": 100, "chakra": 100, "ninjutsu": 100, "taijutsu": 92, "genjutsu": 65, "iq": 88 },
+    "abilities": ["Wood Release", "Sage Mode"],
+    "role": "Offense"
+  },
+  {
+    "id": 12,
+    "name": "Jiraiya",
+    "village": "Leaf",
+    "clan": "None",
+    "image": "https://cdn.myanimelist.net/images/characters/13/284131.jpg",
+    "stats": { "power": 90, "speed": 80, "durability": 88, "chakra": 92, "ninjutsu": 92, "taijutsu": 82, "genjutsu": 70, "iq": 88 },
+    "abilities": ["Sage Mode", "Toad Summoning"],
+    "role": "All-Rounder"
+  },
+  {
+    "id": 13,
+    "name": "Tsunade Senju",
+    "village": "Leaf",
+    "clan": "Senju",
+    "image": "https://cdn.myanimelist.net/images/characters/4/284132.jpg",
+    "stats": { "power": 92, "speed": 72, "durability": 98, "chakra": 95, "ninjutsu": 85, "taijutsu": 92, "genjutsu": 60, "iq": 90 },
+    "abilities": ["Mitotic Regeneration", "Super Strength"],
+    "role": "Healer"
+  },
+  {
+    "id": 14,
+    "name": "Orochimaru",
+    "village": "Sound",
+    "clan": "None",
+    "image": "https://cdn.myanimelist.net/images/characters/12/31330.jpg",
+    "stats": { "power": 88, "speed": 82, "durability": 98, "chakra": 90, "ninjutsu": 98, "taijutsu": 78, "genjutsu": 80, "iq": 98 },
+    "abilities": ["Edo Tensei", "Snake Reincarnation"],
+    "role": "Tactician"
+  },
+  {
+    "id": 15,
+    "name": "Pain (Nagato)",
+    "village": "Rain",
+    "clan": "Uzumaki",
+    "image": "https://cdn.myanimelist.net/images/characters/4/91807.jpg",
+    "stats": { "power": 96, "speed": 82, "durability": 85, "chakra": 98, "ninjutsu": 100, "taijutsu": 75, "genjutsu": 80, "iq": 90 },
+    "abilities": ["Almighty Push", "Chibaku Tensei"],
+    "role": "Offense"
+  },
+  {
+    "id": 16,
+    "name": "Obito Uchiha",
+    "village": "Leaf",
+    "clan": "Uchiha",
+    "image": "https://cdn.myanimelist.net/images/characters/15/222271.jpg",
+    "stats": { "power": 96, "speed": 92, "durability": 95, "chakra": 95, "ninjutsu": 95, "taijutsu": 88, "genjutsu": 90, "iq": 90 },
+    "abilities": ["Kamui Intangibility", "Ten-Tails"],
+    "role": "Defense"
+  },
+  {
+    "id": 17,
+    "name": "Shisui Uchiha",
+    "village": "Leaf",
+    "clan": "Uchiha",
+    "image": "https://cdn.myanimelist.net/images/characters/6/303535.jpg",
+    "stats": { "power": 88, "speed": 98, "durability": 70, "chakra": 80, "ninjutsu": 88, "taijutsu": 85, "genjutsu": 100, "iq": 92 },
+    "abilities": ["Kotoamatsukami", "Body Flicker"],
+    "role": "Genjutsu Specialist"
+  },
+  {
+    "id": 18,
+    "name": "Rock Lee",
+    "village": "Leaf",
+    "clan": "Lee",
+    "image": "https://cdn.myanimelist.net/images/characters/3/284127.jpg",
+    "stats": { "power": 88, "speed": 95, "durability": 85, "chakra": 20, "ninjutsu": 10, "taijutsu": 98, "genjutsu": 10, "iq": 60 },
+    "abilities": ["Sixth Gate", "Primary Lotus"],
+    "role": "Taijutsu Specialist"
+  },
+  {
+    "id": 19,
+    "name": "Shikamaru Nara",
+    "village": "Leaf",
+    "clan": "Nara",
+    "image": "https://cdn.myanimelist.net/images/characters/16/284125.jpg",
+    "stats": { "power": 65, "speed": 68, "durability": 65, "chakra": 65, "ninjutsu": 75, "taijutsu": 60, "genjutsu": 60, "iq": 100 },
+    "abilities": ["Shadow Possession", "Tactical Trap"],
+    "role": "Tactician"
+  },
+  {
+    "id": 20,
+    "name": "Killer Bee",
+    "village": "Cloud",
+    "clan": "None",
+    "image": "https://cdn.myanimelist.net/images/characters/14/104118.jpg",
+    "stats": { "power": 92, "speed": 88, "durability": 92, "chakra": 98, "ninjutsu": 85, "taijutsu": 92, "genjutsu": 70, "iq": 75 },
+    "abilities": ["8-Tails Beast Bomb", "Lariat"],
+    "role": "All-Rounder"
+  },
+  {
+    "id": 21,
+    "name": "Kisame Hoshigaki",
+    "village": "Mist",
+    "clan": "Hoshigaki",
+    "image": "https://cdn.myanimelist.net/images/characters/16/91809.jpg",
+    "stats": { "power": 90, "speed": 80, "durability": 95, "chakra": 100, "ninjutsu": 90, "taijutsu": 85, "genjutsu": 50, "iq": 80 },
+    "abilities": ["Samehada Fusion", "Water Dome"],
+    "role": "Defense"
+  },
+  {
+    "id": 22,
+    "name": "Deidara",
+    "village": "Stone",
+    "clan": "None",
+    "image": "https://cdn.myanimelist.net/images/characters/9/91806.jpg",
+    "stats": { "power": 88, "speed": 82, "durability": 70, "chakra": 85, "ninjutsu": 92, "taijutsu": 65, "genjutsu": 50, "iq": 80 },
+    "abilities": ["C4 Karura", "Explosive Clay"],
+    "role": "Offense"
+  },
+  {
+    "id": 23,
+    "name": "Neji Hyuga",
+    "village": "Leaf",
+    "clan": "Hyuga",
+    "image": "https://cdn.myanimelist.net/images/characters/2/284124.jpg",
+    "stats": { "power": 80, "speed": 82, "durability": 80, "chakra": 75, "ninjutsu": 70, "taijutsu": 95, "genjutsu": 50, "iq": 88 },
+    "abilities": ["Rotation", "8 Trigrams Air Palm"],
+    "role": "Defense"
+  },
+  {
+    "id": 24,
+    "name": "Kaguya Otsutsuki",
+    "village": "None",
+    "clan": "Otsutsuki",
+    "image": "https://cdn.myanimelist.net/images/characters/6/283626.jpg",
+    "stats": { "power": 100, "speed": 90, "durability": 100, "chakra": 100, "ninjutsu": 100, "taijutsu": 80, "genjutsu": 95, "iq": 70 },
+    "abilities": ["Amenominaka", "Ash Bones"],
+    "role": "Offense"
+  },
+  {
+    "id": 25,
+    "name": "Tobirama Senju",
+    "village": "Leaf", "clan": "Senju",
+    "image": "https://cdn.myanimelist.net/images/characters/8/303532.jpg",
+    "stats": { "power": 90, "speed": 95, "durability": 85, "chakra": 90, "ninjutsu": 95, "taijutsu": 85, "genjutsu": 75, "iq": 98 },
+    "abilities": ["Water Dragon", "Flying Raijin"],
+    "role": "Tactician"
+  }
+]
